@@ -14,9 +14,8 @@ Prior to this, he graduated from [School of Mathematical Sciences](https://math.
 
 He conducts research in **actuarial science**, **financial mathematics** and **fintech**, including:
 
-·**non-life insurance actuarial science**: ruin theory and ruin prediction;
-
-·**machine learning**: approximate solutions of stochastic differential equations.
+* **non-life insurance actuarial science**: ruin theory and ruin prediction;
+* **machine learning**: approximate solutions of stochastic differential equations.
 
 
 Publications
