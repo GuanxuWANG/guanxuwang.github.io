@@ -1,0 +1,26 @@
+---
+title: "Paper Title Number 2"
+collection: publications
+permalink: /publication/2022-paper-title-number-2
+excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+date: 2022-04
+venue: 'Journal 2'
+paperurl: 'https://doi.org/10.2991/aebmr.k.220502.039'
+citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+---
+
+[Find paper here](https://doi.org/10.2991/aebmr.k.220502.039)
+
+Cite this article (.bib):
+@inproceedings{Lei2022,
+  title={Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1, N) Algorithm},
+  author={MengIan Lei and Guanxu Wang},
+  year={2022},
+  booktitle={Proceedings of the 2022 International Conference on Urban Planning and Regional Economy（UPRE 2022）},
+  pages={213-219},
+  issn={2352-5428},
+  isbn={978-94-6239-578-7},
+  url={https://doi.org/10.2991/aebmr.k.220502.039},
+  doi={10.2991/aebmr.k.220502.039},
+  publisher={Atlantis Press}
+}
