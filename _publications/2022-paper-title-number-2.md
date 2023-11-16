@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 2"
+title: "Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1, N) Algorithm"
 collection: publications
 permalink: /publication/2022-paper-title-number-2
 date: 2022-03-16
