@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Identification and Analysis of Core Factors of Fintech Based on CRITIC-ANP"
 collection: publications
 permalink: /publication/2022-paper-title-number-1
 date: 2022-01-16
