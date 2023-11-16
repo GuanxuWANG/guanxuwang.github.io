@@ -1,6 +1,10 @@
 ---
-title: '\LaTeX 中的寿险精算符号(Actuarial symbols of life insurance in \LaTeX)'
+title: 'LaTeX 中的寿险精算符号(Actuarial symbols of life insurance in LaTeX)'
 date: 2022-03-02
+tags:
+  - Life insurance
+  - LaTeX
+  - Actuarial symbols
 ---
 Table of contents
 * 系统&软件
