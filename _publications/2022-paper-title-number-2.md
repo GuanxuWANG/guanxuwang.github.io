@@ -9,6 +9,8 @@ paperurl: 'https://doi.org/10.2991/aebmr.k.220502.039'
 [Find paper here](https://doi.org/10.2991/aebmr.k.220502.039)
 
 Cite this article (.bib):
+
+```
 @inproceedings{Lei2022,
   title={Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1, N) Algorithm},
   author={MengIan Lei and Guanxu Wang},
@@ -21,3 +23,4 @@ Cite this article (.bib):
   doi={10.2991/aebmr.k.220502.039},
   publisher={Atlantis Press}
 }
+```
