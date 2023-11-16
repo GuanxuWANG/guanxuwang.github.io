@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Gleason Guanxu WANG is an senior high school math teacher in Jilin Xueyi Teaching and Research Information Consulting Co., Ltd..
+Gleason Guanxu WANG is a senior high school math teacher in Jilin Xueyi Teaching and Research Information Consulting Co., Ltd..
 
 Prior to this, he graduated from [School of Mathematical Sciences](https://math.szu.edu.cn/), [Shenzhen University](https://www.szu.edu.cn/). During his undergraduate course, he majored in Mathematics and Applied Mathematics and Finance with a Bachelor of Science degree and a Bachelor of Economics degree respectively. At the same time, he obtained the micro-professional certificate of actuarial science from Shenzhen University.
 
