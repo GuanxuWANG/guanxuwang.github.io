@@ -2,7 +2,7 @@
 title: "Senior high school mathematics"
 collection: teaching
 type: "Senior high school course"
-date: 2023
+date: 2023-09-01
 location: "Jilin, Jilin, China"
 ---
 
