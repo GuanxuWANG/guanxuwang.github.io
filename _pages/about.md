@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Gleason Guanxu WANG is a senior high school math teacher in Jilin Xueyi Teaching and Research Information Consulting Co., Ltd..
+Guanxu (Gleason) WANG is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/).
 
-Prior to this, he graduated from [School of Mathematical Sciences](https://math.szu.edu.cn/), [Shenzhen University](https://www.szu.edu.cn/). During his undergraduate course, he majored in Mathematics and Applied Mathematics and Finance with a Bachelor of Science degree and a Bachelor of Economics degree respectively. At the same time, he obtained the micro-professional certificate of actuarial science from Shenzhen University.
+Prior to this, he graduated from the [School of Mathematical Sciences](https://math.szu.edu.cn/) at [Shenzhen University](https://www.szu.edu.cn/). During his undergraduate course, he majored in Mathematics and Applied Mathematics and Finance, obtaining a Bachelor of Science degree and a Bachelor of Economics degree, respectively. Concurrently, he obtained the micro-professional certificate of actuarial science from Shenzhen University.
 
 He conducts research in **actuarial science**, **financial mathematics** and **fintech**, including:
 
@@ -25,7 +25,7 @@ Publications
 
 Appendix
 ======
-王观旭目前就职于吉林市学益教研信息咨询有限公司。
+王观旭目前在[格拉斯哥大学](https://www.gla.ac.uk/)-[数学与统计学院](https://www.gla.ac.uk/schools/mathematicsstatistics/)修读[统计学（理学硕士）](https://www.gla.ac.uk/postgraduate/taught/statistics/)专业。
 
 此前，本科毕业于[深圳大学](https://www.szu.edu.cn/)-[数学科学学院](https://math.szu.edu.cn/)。 本科期间修读数学与应用数学和金融学，分别获得理学学士学位和经济学学士学位，同时获得深圳大学精算学微专业证书。
 
