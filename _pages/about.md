@@ -21,16 +21,8 @@ His research interests primarily lie in **actuarial science**, **financial mathe
 
 Publications
 ======
-1. (with MengIan Lei)[Identification and Analysis of Core Factors of Fintech Based on CRITIC-ANP](https://doi.org/10.2991/aebmr.k.220307.170
-        
-        
-        
-        )(2022)
-2. (with MengIan Lei)[Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1,N) Algorithm](https://doi.org/10.2991/aebmr.k.220502.039
-        
-        
-        
-        )(2022)
+1. (with MengIan Lei)[Identification and Analysis of Core Factors of Fintech Based on CRITIC-ANP](https://doi.org/10.2991/aebmr.k.220307.170)(2022)
+2. (with MengIan Lei)[Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1,N) Algorithm](https://doi.org/10.2991/aebmr.k.220502.039)(2022)
 
 Appendix
 ======
