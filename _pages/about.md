@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Guanxu WANG · 王观旭"
+title: "王观旭"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
