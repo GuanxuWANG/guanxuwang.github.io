@@ -21,8 +21,16 @@ His research interests primarily lie in **actuarial science**, **financial mathe
 
 Publications
 ======
-1. (with MengIan Lei)[Identification and Analysis of Core Factors of Fintech Based on CRITIC-ANP](https://doi.org/10.2991/aebmr.k.220307.170)(2022)
-2. (with MengIan Lei)[Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1,N) Algorithm](https://doi.org/10.2991/aebmr.k.220502.039)(2022)
+1. (with MengIan Lei)[Identification and Analysis of Core Factors of Fintech Based on CRITIC-ANP](https://doi.org/10.2991/aebmr.k.220307.170
+        
+        
+        
+        )(2022)
+2. (with MengIan Lei)[Analysis of Regional Financial Risk Identification and Prediction Under CVM-GM(1,N) Algorithm](https://doi.org/10.2991/aebmr.k.220502.039
+        
+        
+        
+        )(2022)
 
 Appendix
 ======
@@ -34,3 +42,5 @@ Appendix
 * **非寿险精算学**：破产理论和破产预测（结合环境风险的精算建模）；
 * **随机过程**：马尔可夫链、鞅、马尔可夫调节风险模型；
 * **机器学习**：通过神经网络求随机微分方程的近似解。
+
+本科及研究生期间的笔记，及工作期间的教材和讲义点击[这里](https://guanxuwang.github.io/files/)。
