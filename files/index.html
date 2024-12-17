@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brain·知识库</title>
     <style>
+        .text-divider {
+            display: flex; 
+            align-items: center; 
+            text-align: center; 
+        }
+        .text-divider::before,
+        .text-divider::after {
+            content: ""; /* 创建两个伪元素 */
+            flex: 1; /* 平均分配空间 */
+            border-bottom: 1px solid black; /* 分割线样式 */
+            margin: 0 10px; /* 文字与线条的间距 */
+        }
         .center-text {
             text-align: center; /* 水平居中 */
             font-size: 48px; /* 字体大小 */
