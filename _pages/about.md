@@ -8,13 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-Guanxu (Gleason) WANG is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
+Guanxu (Gleason) WANG, I, is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
 
-Prior to this, he graduated from the [School of Mathematical Sciences](https://math.szu.edu.cn/) at [Shenzhen University](https://www.szu.edu.cn/), supervised by Associate Professor [Jingchao LI](https://math.szu.edu.cn/info/1081/2953.htm) for Applied Mathematics (Statistics) and Associate Professor [Zhengjia SUN](https://bs.szu.edu.cn/teachers/profilee1d1.html) for Finance. During his undergraduate course, he majored in Mathematics and Applied Mathematics and Finance, obtaining a Bachelor of Science degree and a Bachelor of Economics degree, respectively. Concurrently, he obtained the micro-professional certificate of actuarial science from Shenzhen University.
+Prior to this, I graduated from the [School of Mathematical Sciences](https://math.szu.edu.cn/) at [Shenzhen University](https://www.szu.edu.cn/), supervised by Associate Professor [Jingchao LI](https://math.szu.edu.cn/info/1081/2953.htm) for Applied Mathematics (Statistics) and Associate Professor [Zhengjia SUN](https://bs.szu.edu.cn/teachers/profilee1d1.html) for Finance. During my undergraduate course, I majored in Mathematics and Applied Mathematics and Finance, obtaining a Bachelor of Science degree and a Bachelor of Economics degree, respectively. Concurrently, I obtained the micro-professional certificate of actuarial science from Shenzhen University.
 
-His research interests primarily lie in **actuarial science**, **financial mathematics** and **fintech**, including:
+I am also a member of high IQ clubs **Shenghan (China)** and **Mensa (UK)**.
 
-* **non-life insurance actuarial science**: ruin theory and ruin prediction (combining actuarial modeling with environmental risk);
+My research interests primarily lie in **actuarial science**, **financial mathematics** and **Catastrophe Risk**, including:
+
+* **non-life insurance actuarial science**: Catastrophe risk and prediction;
 * **Stochastic Process**: Markov Chain, Martingale, and Markov-Modulated Risk Model;
 * **machine learning**: approximate solutions of stochastic differential equations through the neural network.
 
@@ -30,8 +32,10 @@ Appendix
 
 此前，本科毕业于[深圳大学](https://www.szu.edu.cn/)-[数学科学学院](https://math.szu.edu.cn/)，指导教师是[李婧超](https://math.szu.edu.cn/info/1081/2953.htm)副教授（应用数学-统计学）与[孙正佳](https://bs.szu.edu.cn/teachers/profilee1d1.html)副教授（金融学-统计学）。本科期间修读数学与应用数学和金融学，分别获得理学学士学位和经济学学士学位，同时获得深圳大学精算学微专业证书。
 
-学习及科研工作期间，主要从事**精算学**、**金融数学**和**金融科技**的研究，主要研究兴趣包括：
-* **非寿险精算学**：破产理论和破产预测（结合环境风险的精算建模）；
+同时也是高智商俱乐部**胜寒（中国）**和**门萨(英国)**的正式会员。
+
+学习及科研工作期间，主要从事**精算学**、**金融数学**和**巨灾风险**的研究，主要研究兴趣包括：
+* **非寿险精算学**：巨灾风险和预测；
 * **随机过程**：马尔可夫链、鞅、马尔可夫调节风险模型；
 * **机器学习**：通过神经网络求随机微分方程的近似解。
 
