@@ -16,9 +16,9 @@ I am also a member of high IQ clubs **Shenghan (China)** and **Mensa (UK)**.
 
 My research interests primarily lie in **actuarial science**, **financial mathematics** and **Catastrophe Risk**, including:
 
-* **non-life insurance actuarial science**: quantification and prediction of catastrophic risks;
-* **Stochastic Process**: Markov chain, martingale, and Markov-modulated risk model;
-* **machine learning**: approximate solutions of stochastic differential equations through the neural network.
+* **Non-life insurance actuarial science**: quantification and prediction of catastrophic risks;
+* **Stochastic process**: Markov chain, martingale, and Markov-modulated risk model;
+* **Machine learning**: approximate solutions of stochastic differential equations through the neural network.
 
 
 Publications
