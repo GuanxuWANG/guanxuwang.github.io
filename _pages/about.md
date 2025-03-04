@@ -14,7 +14,7 @@ Prior to this, I graduated from the [School of Mathematical Sciences](https://ma
 
 I am also a member of high IQ clubs **Shenghan (China)** and **Mensa (UK)**.
 
-My research interests primarily lie in **actuarial science**, **financial mathematics** and **Catastrophe Risk**, including:
+My research interests primarily lie in **actuarial science**, **financial mathematics** and **catastrophe risk**, including:
 
 * **Non-life insurance actuarial science**: quantification and prediction of catastrophic risks;
 * **Stochastic process**: Markov chain, martingale, and Markov-modulated risk model;
