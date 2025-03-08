@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Guanxu (Gleason) WANG, I, is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
+Guanxu (Gleason) WANG, I, a member of Communist Party of China (CPC), is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
 
 Prior to this, I graduated from the [School of Mathematical Sciences](https://math.szu.edu.cn/) at [Shenzhen University](https://www.szu.edu.cn/), supervised by Associate Professor [Jingchao LI](https://math.szu.edu.cn/info/1081/2953.htm) for Applied Mathematics (Statistics) and Associate Professor [Zhengjia SUN](https://bs.szu.edu.cn/teachers/profilee1d1.html) for Finance. During my undergraduate course, I majored in **Mathematics and Applied Mathematics** and **Finance**, obtaining a **Bachelor of Science** degree and a **Bachelor of Economics** degree, respectively. Concurrently, I obtained the micro-professional certificate of **actuarial science** from Shenzhen University.
 
@@ -27,7 +27,7 @@ Publications
 
 Appendix
 ======
-王观旭 (Gleason) 目前在[格拉斯哥大学](https://www.gla.ac.uk/)-[数学与统计学院](https://www.gla.ac.uk/schools/mathematicsstatistics/)修读[统计学（理学硕士）](https://www.gla.ac.uk/postgraduate/taught/statistics/)专业，指导教师是[Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/)教授。
+王观旭 (Gleason) ，中共党员，目前在[格拉斯哥大学](https://www.gla.ac.uk/)-[数学与统计学院](https://www.gla.ac.uk/schools/mathematicsstatistics/)修读[统计学（理学硕士）](https://www.gla.ac.uk/postgraduate/taught/statistics/)专业，指导教师是[Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/)教授。
 
 此前，本科毕业于[深圳大学](https://www.szu.edu.cn/)-[数学科学学院](https://math.szu.edu.cn/)，指导教师是[李婧超](https://math.szu.edu.cn/info/1081/2953.htm)副教授与[孙正佳](https://bs.szu.edu.cn/teachers/profilee1d1.html)副教授。本科期间修读**数学与应用数学**和**金融学**，分别获得**理学学士**学位和**经济学学士**学位，同时获得深圳大学**精算学微专业**证书。
 
@@ -37,5 +37,8 @@ Appendix
 * **非寿险精算学**：巨灾风险的量化与预测；
 * **随机过程**：马尔可夫链、鞅、马尔可夫调节风险模型；
 * **机器学习**：通过神经网络求随机微分方程的近似解。
+
+**过往经历（装B）**  
+前中国音乐家协会会员、中式烹饪师四级（但具备三级水准）、作曲师、编曲师（作曲家编曲家有点太装逼了，到不了“家”这个级别）。
 
 本科及研究生期间的笔记，及工作期间的教材和讲义点击[这里](https://guanxuwang.github.io/files/)。
