@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Guanxu (Gleason) WANG, I, a member of Communist Party of China (CPC), is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
+Guanxu (Gleason) WANG, I, a member of the Communist Party of China (CPC), is currently pursuing a [Master of Science degree in Statistics](https://www.gla.ac.uk/postgraduate/taught/statistics/) at the [School of Mathematics & Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/), supervised by Professor [Jethro Browell](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/jethrobrowell/).
 
 Prior to this, I graduated from the [School of Mathematical Sciences](https://math.szu.edu.cn/) at [Shenzhen University](https://www.szu.edu.cn/), supervised by Associate Professor [Jingchao LI](https://math.szu.edu.cn/info/1081/2953.htm) for Applied Mathematics (Statistics) and Associate Professor [Zhengjia SUN](https://bs.szu.edu.cn/teachers/profilee1d1.html) for Finance. During my undergraduate course, I majored in **Mathematics and Applied Mathematics** and **Finance**, obtaining a **Bachelor of Science** degree and a **Bachelor of Economics** degree, respectively. Concurrently, I obtained the micro-professional certificate of **actuarial science** from Shenzhen University.
 
