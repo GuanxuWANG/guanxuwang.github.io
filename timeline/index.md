@@ -13,7 +13,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color:rgb(116, 116, 116);
+    background-color:rgb(160, 160, 160);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -99,7 +99,7 @@
     <div class="timeline-item left">
         <div class="timeline-content">
             <h3>2001年7月4日</h3>
-            <p>项目启动</p>
+            <p>地球Online（困难模式）开局</p>
         </div>
     </div>
 
