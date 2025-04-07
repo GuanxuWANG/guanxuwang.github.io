@@ -134,7 +134,7 @@
     <div class="timeline-item right">
         <div class="timeline-content">
             <h3>2010年</h3>
-            <p>得到高人指点，全奖前往解放军艺术学院学习青衣</p>
+            <p>前往中国人民解放军艺术学院（现中国人民解放军国防大学军事文化学院）公费学习“程派”青衣</p>
         </div>
     </div>
 
