@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
 <style>
@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-/* 时间轴竖线 */
+<!-- /* 时间轴竖线 */ -->
 .timeline::after {
     content: '';
     position: absolute;
@@ -20,7 +20,7 @@
     margin-left: -3px;
 }
 
-/* 时间轴容器 */
+<!-- /* 时间轴容器 */ -->
 .timeline-item {
     padding: 10px 40px;
     position: relative;
@@ -28,7 +28,7 @@
     width: 50%;
 }
 
-/* 时间轴内容框 */
+<!-- /* 时间轴内容框 */ -->
 .timeline-content {
     padding: 20px 30px;
     background-color: white;
@@ -38,17 +38,17 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* 左侧对齐 */
+<!-- /* 左侧对齐 */ -->
 .left {
     left: 0;
 }
 
-/* 右侧对齐 */
+<!-- /* 右侧对齐 */ -->
 .right {
     left: 50%;
 }
 
-/* 时间轴圆点 */
+<!-- /* 时间轴圆点 */ -->
 .timeline-item::after {
     content: '';
     position: absolute;
@@ -66,7 +66,7 @@
     left: -12px;
 }
 
-/* 响应式布局 */
+<!-- /* 响应式布局 */ -->
 @media screen and (max-width: 600px) {
     .timeline::after {
         left: 31px;
