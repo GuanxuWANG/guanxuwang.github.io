@@ -113,7 +113,7 @@
     <div class="timeline-item left">
         <div class="timeline-content">
             <h3>2007年9月</h3>
-            <p>初中：吉林市船营区第四小学</p>
+            <p>小学：吉林市船营区第四小学</p>
         </div>
     </div>
 
