@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S.(Mathematics and Applied Mathematics) in China, Shenzhen University, 2023
-* B.E.(Finance) in China, Shenzhen University, 2023
+* B.Sc.(Mathematics and Applied Mathematics) in China, Shenzhen University, 2023
+* B.Ec.(Finance) in China, Shenzhen University, 2023
 
 Work experience
 ======
