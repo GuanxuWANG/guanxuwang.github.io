@@ -232,16 +232,24 @@
         </div>
     </div>
 
-    <div class="timeline-item left">
+    <div class="timeline-item right">
         <div class="timeline-content">
             <h3>2021年</h3>
             <p>抑郁</p>
         </div>
     </div>
 
-    <div class="timeline-item right">
+    <div class="timeline-item left">
         <div class="timeline-content">
             <h3>2022年</h3>
+            <p>前往中国人民解放军某海军部队开展研究，恢复前文工团军衔</p>
+            <p>中旬以少尉军衔离开部队，辞去部队文职（研究员助理）工作</p>
+        </div>
+    </div>
+
+    <div class="timeline-item right">
+        <div class="timeline-content">
+            <h3>2022年中下旬</h3>
             <p>治疗至今，开始停药，暂不复发</p>
         </div>
     </div>
@@ -325,4 +333,6 @@
 </div>
 
 </body>
+
+<a href="https://guanxuwang.github.io/">回到主页</a>
 </html>
