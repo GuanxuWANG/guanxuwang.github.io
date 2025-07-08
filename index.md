@@ -1,3 +1,6 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -83,3 +86,5 @@ Email: [wanggx11174@163.com](mailto:wanggx11174@163.com)
 
 - **PhD supervisor:** Prof Jing-Hao Xue  
 - **Alma maters:** [London School of Economics and Political Science](https://www.lse.ac.uk/); [University of Cambridge](https://www.cam.ac.uk/); [University College London](https://www.ucl.ac.uk/)
+
+</html>
