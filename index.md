@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Guanxu WANG</title>
 </head>
+<body>
 
 # Guanxu WANG
 
@@ -87,4 +88,5 @@ Email: [wanggx11174@163.com](mailto:wanggx11174@163.com)
 - **PhD supervisor:** Prof Jing-Hao Xue  
 - **Alma maters:** [London School of Economics and Political Science](https://www.lse.ac.uk/); [University of Cambridge](https://www.cam.ac.uk/); [University College London](https://www.ucl.ac.uk/)
 
+</body>
 </html>
