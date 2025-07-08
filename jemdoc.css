@@ -7,10 +7,11 @@ table#tlayout {
 }
 
 body {
-	background: #f4f4f4;
+	background: white;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
+	text-align: center;
 }
 
 #layout-menu {
@@ -39,6 +40,8 @@ body {
     background: white;
     text-align: left;
     vertical-align: top;
+    width:1000px;
+    margin: auto;
 }
 
 #layout-menu a {
@@ -51,7 +54,8 @@ tt {
 }
 
 pre, tt {
-	font-size: 90%;
+	font-size: 100%;
+	color: red;
 	font-family: monaco, monospace;
 }
 
@@ -78,7 +82,7 @@ a:hover {
 
 div.menu-category {
 	border-bottom: 1px solid gray;
-	margin-top: 0.5em;
+	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
 	font-weight: bold;
@@ -118,8 +122,8 @@ strong {
 
 h1, h2, h3 {
 	color: #527bbd;
-	margin-top: 0.5em;
-	margin-bottom: 0.1em;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
