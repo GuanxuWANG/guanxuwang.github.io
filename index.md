@@ -1,3 +1,10 @@
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Guanxu WANG</title>
+</head>
+
 # Guanxu WANG
 
 MSc student in Statistics, [School of Mathematics and Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/)
