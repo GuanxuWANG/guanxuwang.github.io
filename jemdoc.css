@@ -365,3 +365,21 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+#person {
+	width:100%;
+	line-height: 1.5;
+	border: none;
+}
+
+#person td { 
+	border: none;
+	border-collapse: collapse;
+	text-align: left;
+	border-top:none;
+	border-bottom:none; 
+	margin: 0px;
+	padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
