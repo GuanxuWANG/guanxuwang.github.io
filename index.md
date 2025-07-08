@@ -1,7 +1,8 @@
 # Guanxu WANG
 
-**Lecturer**, [School of Mathematics and Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/)  
-**Email:** [xiaochen.yang@glasgow.ac.uk](mailto:xiaochen.yang@glasgow.ac.uk)
+MSc student in Statistics, [School of Mathematics and Statistics](https://www.gla.ac.uk/schools/mathematicsstatistics/), [University of Glasgow](https://www.gla.ac.uk/)
+
+Email: [wanggx11174@163.com](mailto:wanggx11174@163.com)
 
 ---
 
