@@ -1,0 +1,610 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SAT数学 500分到600分 教师授课规划</title><style>
+    :root{--teal:#0f766e;--teal-dark:#115e59;--ink:#18323a;--muted:#61767a;--paper:#fff;--soft:#f2faf8;--line:#d9e9e6;--gold:#b7791f;--rose:#fff5f3;--blue:#eff7ff;}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#eaf2f1;color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+    body:before{content:"GW";position:fixed;right:3vw;bottom:2vh;font:700 120px/1 Arial;color:rgba(15,118,110,.045);z-index:-1;pointer-events:none}
+    .page{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;border-top:7px solid var(--teal);box-shadow:0 0 30px rgba(17,94,89,.08)}
+    .identity{display:flex;align-items:center;gap:16px;padding:18px 28px;background:#e8f7f4;border-bottom:1px solid var(--line);flex-wrap:wrap}
+    .avatar{width:64px;height:64px;border-radius:50%;flex:none;border:3px solid white;box-shadow:0 2px 8px rgba(15,118,110,.25)}
+    .identity-main{min-width:230px;flex:1}.identity-name{font-size:20px;font-weight:800;color:var(--teal-dark);letter-spacing:.02em}.identity-cred,.identity-role{font-size:12px;color:#4d686c}.edition{margin-left:auto;text-align:right;color:var(--teal-dark);font:700 11px/1.4 Arial;letter-spacing:.12em}.edition span{display:block;font-size:20px;letter-spacing:.02em}
+    main{padding:28px 34px 54px}.kicker{color:var(--teal);font:700 12px/1.3 Arial;letter-spacing:.13em;text-transform:uppercase}.hero h1{margin:8px 0 5px;font-size:36px;line-height:1.2;color:#123f43}.hero .subtitle{font-size:18px;color:var(--muted);margin:0 0 16px}.prepared{border-left:4px solid var(--teal);padding:8px 14px;background:#f7fbfa;color:#4e686b}.warning{background:#fff9e9;border:1px solid #f1dfaf;border-radius:10px;padding:16px 18px;margin:18px 0;color:#5f4a19}.callout{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:17px 19px;margin:18px 0}.callout h3{margin:0 0 5px;color:var(--teal-dark)}
+    h2{margin:38px 0 12px;padding-top:9px;border-top:2px solid var(--line);font-size:26px;color:#174c4c} h3{margin:24px 0 8px;color:#1c6664} h4{margin:16px 0 5px;color:#2b5759} p{margin:8px 0} ul,ol{padding-left:23px;margin:7px 0 12px} li{margin:3px 0}.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0 22px}.toc a{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:8px;color:var(--teal-dark);text-decoration:none;background:#fbfefd}.toc a:hover{background:var(--soft)}
+    table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:13px}th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top}th{background:#e8f7f4;color:#145b5a;text-align:left}tr:nth-child(even) td{background:#fbfefd}.small{font-size:12px;color:var(--muted)}code{font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;background:#edf6f5;border-radius:4px;padding:1px 4px;word-break:break-word}
+    .block{margin:42px 0 22px}.block-title{display:flex;align-items:end;gap:10px;border-bottom:3px solid var(--teal);padding-bottom:8px}.block-title h2{border:0;padding:0;margin:0}.block-title .en{color:var(--muted);font:700 13px Arial;letter-spacing:.06em}.module{margin:28px 0 38px;padding:20px 21px;border:1px solid var(--line);border-radius:14px;background:#fff}.module-header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.module h3{margin:0;font-size:23px}.module h3 small{display:block;color:var(--muted);font:600 12px Arial;margin-top:3px}.badge{display:inline-block;padding:4px 9px;background:#e3f5f1;color:#0f6d68;border-radius:99px;font:700 11px Arial;white-space:nowrap}.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin:12px 0}.concept-card{padding:13px 14px;border:1px solid #e1eeee;border-radius:10px;background:#fbfefd}.concept-card .label{font:700 11px Arial;letter-spacing:.04em;color:var(--teal);text-transform:uppercase}.concept-card p{margin:4px 0}.audit{background:#f7fbfa;padding:10px 14px;border-radius:8px;border-left:3px solid #7abfb7}.board{counter-reset:board}.board li{counter-increment:board}.board li::marker{color:var(--teal);font-weight:700}.prompt{display:grid;grid-template-columns:1fr 1fr;gap:10px}.prompt div{background:#f7fbfa;border-radius:8px;padding:10px 12px}.prompt strong{color:var(--teal-dark)}
+    .question{margin:15px 0;padding:16px 18px;border-left:4px solid var(--gold);background:#fffdf6;border-radius:0 10px 10px 0}.question .q-label{font:700 11px Arial;letter-spacing:.09em;color:#946512;text-transform:uppercase}.question .stem{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.7;color:#102f36}.choices{margin:9px 0 3px;padding-left:24px}.solution{margin-top:12px;padding:13px 15px;border-left:3px solid #76b7af;background:#f5fbfa}.answer-line{font-weight:700;color:var(--teal-dark)}.source-note{margin:10px 0;padding:10px 12px;background:#f1f7ff;border:1px solid #d7e8f8;border-radius:8px;font-size:12px;color:#48636b}.generated{font-size:12px;color:#805d18;background:#fff8e7;border-radius:5px;padding:2px 6px}.homework{background:#fbfbff;border:1px solid #dedff4;border-left:4px solid #6b64b7}.homework .q-label{color:#5d56a6}.homework .source-note{background:#f5f3ff;border-color:#e2dffc}.exit{background:#f7fbfa;border-radius:9px;padding:12px 14px;border:1px dashed #8bc4bd}.route-chip{display:inline-block;background:#125f5b;color:#fff;border-radius:99px;padding:5px 10px;font-size:12px;font-weight:700}.score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.score-card{padding:14px;border:1px solid var(--line);border-radius:11px;background:#fff}.score-card strong{display:block;color:var(--teal-dark);font-size:17px}.footer{margin-top:44px;padding:22px 34px;background:#f2faf8;border-top:1px solid var(--line);color:#587072}.signature{color:var(--teal-dark);font-weight:700}.sol-section{padding:20px 0;border-bottom:1px solid var(--line)}.rubric{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.rubric div{padding:9px;background:#f7fbfa;border-radius:8px;font-size:13px}.nowrap{white-space:nowrap}
+    @media(max-width:720px){main{padding:21px 17px 40px}.identity{padding:15px 17px}.edition{margin-left:0;text-align:left}.hero h1{font-size:28px}.prompt{grid-template-columns:1fr}.module{padding:15px 13px}.module h3{font-size:20px}table{font-size:12px;display:block;overflow-x:auto}.score-grid{grid-template-columns:1fr}}
+    </style><script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body><div class="page">
+    <div class="identity"><img class="avatar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgMTYwIDE2MCI+PHJlY3Qgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNjAiIHJ4PSI4MCIgZmlsbD0iIzBmNzY2ZSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iODAiIHI9IjYwIiBmaWxsPSJub25lIiBzdHJva2U9IiNkN2YzZWYiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IHg9IjgwIiB5PSI5MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjU0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSI+R1c8L3RleHQ+PC9zdmc+" alt="GW avatar"><div class="identity-main"><div class="identity-name">Guanxu (Gleason) WANG</div><div class="identity-cred">MSc Statistics (with Distinction), University of Glasgow</div><div class="identity-role">Head of the Mathematics &amp; Statistics Group, Lumist Education</div></div><div class="edition">STATISTICS <span>/ 2026</span></div></div>
+    <main><div class="hero"><div class="kicker">SAT MATH · 教师授课规划</div><h1>SAT数学｜500分到600分｜教师授课规划</h1><p class="subtitle">基础重建路线｜面向教师的可直接使用版本</p><div class="prepared">Prepared for SAT Math teaching · 本页按当前文件夹中的 SAT Math 题库、数学专项练习和数学真题包编排。</div></div>
+    <div class="warning"><strong>使用边界：</strong>分数路线是教学规划，不是分数保证。题库中部分公式在原PDF字体层无法直接复制，本套课堂题均明确标为“同考点改编题”，并保留原题文件名与 Question ID 供回查。</div>
+    
+        <h2 id="map">一、路线定位与知识地图</h2>
+        <div class="score-grid"><div class="score-card"><strong>起点判断</strong>基础薄弱、运算和读题不稳定，常在简单题上丢分。</div><div class="score-card"><strong>路线目标</strong>先做到基础题稳定正确，再建立中档题的固定流程；目标是把会做的题全部做对。</div><div class="score-card"><strong>重点</strong>代数翻译、单位与百分比、核心几何公式、数据读表；暂不追求偏难题速度。</div><div class="score-card"><strong>达标证据</strong>每个核心模块基础题正确率达到85%，混合练习中非计算器题平均每题不超过2.5分钟。</div></div>
+        <h3>建议总课时</h3><p><span class="route-chip">30小时（20次×90分钟）</span>  每次课建议保留10分钟小测、55分钟新授与带练、15分钟独立练习、10分钟退出检查。</p>
+        <h3>阶段课表</h3><table><thead><tr><th>阶段</th><th>课时</th><th>内容</th><th>教师动作</th></tr></thead><tbody><tr><td>第1阶段｜诊断与语言修补</td><td>4次</td><td>A1、C1、C2、C3</td><td>把英文关键词、单位、方程和基本统计量变成可执行步骤。</td></tr><tr><td>第2阶段｜代数主干</td><td>5次</td><td>A2、A3、A4、A5、B1</td><td>稳住函数、系统、不等式和展开，优先保证基础分。</td></tr><tr><td>第3阶段｜非线性入门</td><td>3次</td><td>B2、B3</td><td>会因式分解、读顶点和使用简单指数模型。</td></tr><tr><td>第4阶段｜几何与数据解释</td><td>5次</td><td>C4、C5、C6、C7、D1</td><td>从算数走向模型解释，学习最少但可靠的统计语言。</td></tr><tr><td>第5阶段｜图形与整合</td><td>3次</td><td>D2、D3、D4</td><td>公式识别、单位检查、基础三角比和错题回炉。</td></tr></tbody></table>
+        <h3>四大板块优先级</h3><table><thead><tr><th>板块</th><th>先拿到的能力</th><th>本路线安排</th></tr></thead><tbody>
+          <tr><td>Algebra｜代数</td><td>英文条件翻译成方程、函数、不等式</td><td>所有路线先教；它是其他板块的计算骨架。</td></tr>
+          <tr><td>Advanced Math｜高等数学</td><td>展开、因式分解、顶点、指数比例</td><td>500-600先保留入口；600以上增加结构与参数。</td></tr>
+          <tr><td>Problem-Solving and Data Analysis｜问题解决与数据分析</td><td>单位、百分比、数据中心、模型与统计结论</td><td>低分路线用它修补读题；高分路线用它练边界和解释。</td></tr>
+          <tr><td>Geometry and Trigonometry｜几何与三角函数</td><td>公式识别、相似、圆、直角三角形</td><td>先建立图形语言，再做多步综合。</td></tr>
+        </tbody></table>
+        <h3>目录</h3><div class="toc"><a href="#A1">A1 · 一次方程</a><a href="#A2">A2 · 一次函数与图像</a><a href="#A3">A3 · 二元一次方程</a><a href="#A4">A4 · 一次方程组</a><a href="#A5">A5 · 一次不等式</a><a href="#B1">B1 · 等价表达式</a><a href="#B2">B2 · 非线性方程与方程组</a><a href="#B3">B3 · 非线性函数、二次模型与指数模型</a><a href="#C1">C1 · 比率、速率、比例与单位</a><a href="#C2">C2 · 百分比</a><a href="#C3">C3 · 单变量数据</a><a href="#C4">C4 · 双变量数据与线性模型</a><a href="#C5">C5 · 概率</a><a href="#C6">C6 · 样本统计量与误差范围</a><a href="#C7">C7 · 统计声明的判断</a><a href="#D1">D1 · 直线、角与三角形</a><a href="#D2">D2 · 面积、表面积与体积</a><a href="#D3">D3 · 圆</a><a href="#D4">D4 · 直角三角形与三角函数</a></div>
+        <h2 id="teaching">二、教师课堂总流程</h2>
+        <div class="callout"><h3>每次课固定脚本</h3><ol><li>Retrieval：学生先做2道上一课的短题，不看笔记。</li><li>Motivation：用一句现实问题说明今天的量是什么。</li><li>Definition：先用中文说清概念，再写正式公式和符号条件。</li><li>Modeling：教师把英文题中的单位、关键词和未知量圈出来。</li><li>Guided practice：课堂题由学生口述下一步，教师只追问合法性。</li><li>Independent practice：学生独立完成同知识点的作业题。</li><li>Exit check：每人用一句话说出公式、适用条件和一个易错点。</li></ol></div>
+        <div class="warning"><strong>分数路线的取舍：</strong>课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。 达标后再把时间投入下一层难度，不用让基础薄弱学生一开始被难题拖慢，也不让高分学生长期停留在已掌握的基础题。</div>
+        <h2 id="source-map">三、来源与题目使用规则</h2>
+        <p>当前文件夹中的题库按四大板块分组；每个知识点在下文都给出本地来源文件和 Question ID。课堂题与作业题使用英文 SAT-style 形式，标为“同考点改编题”；真题文件只在教师回查和阶段模拟中使用。</p>
+        <table><thead><tr><th>板块</th><th>知识点</th><th>本地来源</th><th>Question ID</th><th>本路线作用</th></tr></thead><tbody><tr><td>代数</td><td>一次方程</td><td>SAT-math Question Bank/Algebra/Linear Equations in One Variable/Linear Equations in One Variable 1.pdf</td><td><code>9b886541</code></td><td>基础保分</td></tr><tr><td>代数</td><td>一次函数与图像</td><td>SAT-math Question Bank/Algebra/Linear Functions/Linear Functions 1.pdf</td><td><code>84664a7c</code></td><td>基础保分</td></tr><tr><td>代数</td><td>二元一次方程</td><td>SAT-math Question Bank/Algebra/Linear Equations in Two Variables/Linear Equations in Two Variables 1.pdf</td><td><code>4d8ccb96</code></td><td>基础保分</td></tr><tr><td>代数</td><td>一次方程组</td><td>SAT-math Question Bank/Algebra/Systems of Linear Equations/Systems of Linear Equations 1.pdf</td><td><code>b86123af</code></td><td>基础保分</td></tr><tr><td>代数</td><td>一次不等式</td><td>SAT-math Question Bank/Algebra/Linear Inequalities/Linear Inequalities 1.pdf</td><td><code>2c121b25</code></td><td>基础保分</td></tr><tr><td>高等数学</td><td>等价表达式</td><td>SAT-math Question Bank/Advanced Math/Equivalent Expressions/Equivalent Expressions 1.pdf</td><td><code>e312081b</code></td><td>基础保分</td></tr><tr><td>高等数学</td><td>非线性方程与方程组</td><td>SAT-math Question Bank/Advanced Math/Nonlinear Equations and Systems/Nonlinear Equations and Systems 1.pdf</td><td><code>3c95093c</code></td><td>基础保分</td></tr><tr><td>高等数学</td><td>非线性函数、二次模型与指数模型</td><td>SAT-math Question Bank/Advanced Math/Nonlinear Functions/Nonlinear Functions 1.pdf</td><td><code>6abec9a8</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>比率、速率、比例与单位</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Ratios, Rates, Proportions, and Units/Ratios, Rates, Proportions, and Units 1.pdf</td><td><code>3f5398a6</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>百分比</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Percentages/Percentages 1.pdf</td><td><code>bd90f87e</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>单变量数据</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/One-Variable Data/One-Variable Data 1.pdf</td><td><code>f890dc20</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>双变量数据与线性模型</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Two-Variable Data/Two-Variable Data 1.pdf</td><td><code>82aaa0a1</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>概率</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Probability/Probability 1.pdf</td><td><code>1353b86e</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>样本统计量与误差范围</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error 1.pdf</td><td><code>90eed2e5</code></td><td>基础保分</td></tr><tr><td>问题解决与数据分析</td><td>统计声明的判断</td><td>SAT-math Question Bank/Sample Statistics and Margin of Error/Evaluating Statistical Claims/Evaluating Statistical Claims 1.pdf</td><td><code>9bf4c545</code></td><td>基础保分</td></tr><tr><td>几何与三角函数</td><td>直线、角与三角形</td><td>SAT-math Question Bank/Geometry and Trigonometry/Lines, Angles, and Triangles/Lines, Angles, and Triangles 1.pdf</td><td><code>5207e508</code></td><td>基础保分</td></tr><tr><td>几何与三角函数</td><td>面积、表面积与体积</td><td>SAT-math Question Bank/Geometry and Trigonometry/Area and Volume/Area and Volume 1.pdf</td><td><code>bb560789</code></td><td>基础保分</td></tr><tr><td>几何与三角函数</td><td>圆</td><td>SAT-math Question Bank/Geometry and Trigonometry/Circles/Circles 1.pdf</td><td><code>f2495de4</code></td><td>基础保分</td></tr><tr><td>几何与三角函数</td><td>直角三角形与三角函数</td><td>SAT-math Question Bank/Geometry and Trigonometry/Right Triangles and Trigonometry/Right Triangles and Trigonometry 1.pdf</td><td><code>bbaac300</code></td><td>基础保分</td></tr></tbody></table>
+        <h3>可直接安排的数学真题包</h3><p>以下是当前资料中明确标为 Math only / only Math 的真题和答案文件，教师可在阶段测或家庭作业中按考试月份抽取。若要逐题解析，第二份HTML只对本页布置的作业题提供完整解析，真题文件仍以同目录答案文件核对。</p><ul><li><code>真题（更新至26.5/23年/23年6月/23年6月-1-3-Answer keys(only Math).pdf</code></li><li><code>真题（更新至26.5/23年/23年6月/23年6月-1-3-Questions(only Math).pdf</code></li><li><code>真题（更新至26.5/24年/24年10月/24年10月-北美3-Answer Keys(only Math).pdf</code></li><li><code>真题（更新至26.5/24年/24年10月/24年10月-北美3-Questions(only Math).pdf</code></li><li><code>真题（更新至26.5/24年/24年11月/24年11月-亚太3-Answer Keys (Math only M2).pdf</code></li><li><code>真题（更新至26.5/24年/24年11月/24年11月-亚太3-Questions (Math only M2).pdf</code></li><li><code>真题（更新至26.5/24年/24年5月/24年5⽉-2-Answer Keys (Math only M1).pdf</code></li><li><code>真题（更新至26.5/24年/24年5月/24年5⽉-2-Questions (Math only M1).pdf</code></li><li><code>真题（更新至26.5/25年/25年10月/25年10月-北美2-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年10月/25年10月-北美2-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年11月/25年11月-北美1-Answer Keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年11月/25年11月-北美1-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-亚太2-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-亚太2-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-亚太3-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-亚太3-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美1-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美1-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美2-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美2-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美3-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美3-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美4-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年12月/25年12月-北美4-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年5月/25年5月-3-Answer Keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年5月/25年5月-3-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年8月/25年8月-3-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年8月/25年8月-3-Questions (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年9月/25年9月-亚太2-Answer keys (Math only M2).pdf</code></li><li><code>真题（更新至26.5/25年/25年9月/25年9月-亚太2-Questions (Math only M2).pdf</code></li><li><code>真题（更新至26.5/25年/25年9月/25年9月-北美5-Answer keys (only Math).pdf</code></li><li><code>真题（更新至26.5/25年/25年9月/25年9月-北美5-Questions (only Math).pdf</code></li></ul>
+        <h2 id="checklist">四、教师交付前检查清单</h2><ul><li>学生能说出每个公式中每个符号的含义和单位。</li><li>学生能区分“固定增加量”和“固定百分比”。</li><li>方程、不等式、函数和系统题都能写出第一步模型。</li><li>几何题先标图、找对应关系，再代公式。</li><li>统计题能区分样本、总体、随机抽样、随机分组、关联和因果。</li><li>每道错题记录错误类型：概念、建模、运算、表达、时间。</li><li>连续两次达到路线达标证据后，才进入下一层难度。</li></ul>
+        <div class="block" id="block-Algebra"><div class="block-title"><h2>代数</h2><span class="en">Algebra</span></div>
+    <section class="module" id="A1">
+      <div class="module-header"><div><h3>1. 一次方程<small>Linear Equations in One Variable</small></h3></div><span class="badge">代数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>整数运算、分配律、等式两边做同样的运算</p>
+      <p><strong>本知识点要解决的问题：</strong>把一个未知量从一串运算中“解救出来”：等式两边必须保持平衡。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>一次方程中未知数的最高次数是1。解题的核心不是背步骤，而是每一步都对等式两边做同样的合法操作，直到得到变量的单独值。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>一般形式为 \(ax+b=c\)，其中 \(a\ne0\)。逐步整理可得 \(x=\dfrac{c-b}{a}\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(a,b,c\) 是已知常数；\(x\) 是未知数；若两边同乘或同除一个非零数，等式解集不变。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>例：\(3(x-4)+2=20\)。先展开为 \(3x-10=20\)，再得到 \(3x=30\)，所以 \(x=10\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它是后面函数、系统、比例和文字建模的共同入口：先把语言翻译成方程，再按结构整理。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>等式与不等式不同：方程允许乘除任意非零数；不等式乘除负数时必须反向。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>常见错误是漏乘括号、移项只改符号不改变等式两边、以及把“每件增加”误读成固定总量。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(ax+b=c\)</li><li>\(x=\dfrac{c-b}{a}\)</li><li>代回原式检验</li><li>括号前有负号时先整体处理</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先写“等式两边同做什么”，再做运算。</li><li>把 \(3(x-4)\) 展开，强调每一项都乘3。</li><li>把含 \(x\) 的项放一边，常数放另一边。</li><li>最后把答案代回原题。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>如果两边都减去10，解会改变吗？<br><strong>预期回应：</strong>不会；这是保持平衡的合法操作。</div><div><strong>教师问：</strong>为什么不能直接把负号“丢掉”？<br><strong>预期回应：</strong>因为负号是系数的一部分，必须随整项移动或除以负数。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">The equation \(3(x-4)+2=20\) is given. What is the value of \(x\)?</div><ul class="choices"><li>A. \(6\)</li><li>B. \(8\)</li><li>C. \(10\)</li><li>D. \(12\)</li></ul><div class="solution"><strong>中文解析：</strong>展开括号：\(3x-12+2=20\)，所以 \(3x-10=20\)。两边加10，得 \(3x=30\)；两边除以3，得 \(x=10\)。代回：\(3(10-4)+2=18+2=20\)，因此 C 正确。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Equations in One Variable/Linear Equations in One Variable 1.pdf</code>，原题编号 <code>9b886541</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A taxi company charges a fixed fee of $4 plus $2.50 for each mile. A ride costs $24. How many miles did the taxi travel? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(8\) miles</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Equations in One Variable/Linear Equations in One Variable 1.pdf</code>，原题编号 <code>9b886541</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>独立完成：\(5(2x-1)=35\)，并写出每一步保持等式平衡的理由。</div>
+      <p><strong>与下一知识点的连接：</strong>下一步把一个变量的数值关系升级为两变量的直线关系。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Algebra/Linear Equations in One Variable/Linear Equations in One Variable 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="A2">
+      <div class="module-header"><div><h3>2. 一次函数与图像<small>Linear Functions and Graphs</small></h3></div><span class="badge">代数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>坐标平面、斜率、截距、函数输入输出</p>
+      <p><strong>本知识点要解决的问题：</strong>一次函数回答“每增加一个单位，输出稳定改变多少”；斜率是变化率，截距是起点。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>一次函数常写成 \(y=mx+b\)。\(m\) 告诉我们每增加1个 \(x\)，\(y\) 改变多少；\(b\) 是 \(x=0\) 时的初始值。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(f(x)=mx+b\)，其中 \(m=\dfrac{y_2-y_1}{x_2-x_1}\)（\(x_1\ne x_2\)），\(b=f(0)\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(x\) 是输入，\(y\) 或 (f\(x\)) 是输出，\(m\) 是单位变化率，\(b\) 是初值；模型成立的前提是题目说明变化率恒定。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>过点 \(0,5\) 与 \(2,11\) 的直线斜率为 \(3\)，所以 \(y=3x+5\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>函数表、图像、文字模型和方程是同一个线性关系的四种表示，SAT常要求在它们之间切换。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>斜率 \(m\) 不是截距 \(b\)：\(m\) 是“每单位变化”，\(b\) 是“起始量”。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>最常见错误是把横纵坐标读反、把初始值当斜率、或忘记单位。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(y=mx+b\)</li><li>\(m=\dfrac{\Delta y}{\Delta x}\)</li><li>\(b=y-mx\)</li><li>表格中相邻差值恒定才是线性</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先圈出“每秒、每英里、每件”等变化率词。</li><li>标出起始时刻的量。</li><li>写成 \(y=mx+b\)，再用一个点检验。</li><li>用图像上升/下降方向检查斜率符号。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>roller coaster starts 15 feet above ground，这个15代表什么？<br><strong>预期回应：</strong>代表初始高度，也就是截距。</div><div><strong>教师问：</strong>每秒上升8英尺，斜率为什么是8而不是15？<br><strong>预期回应：</strong>因为斜率表示单位时间的变化量。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">The front of a roller-coaster car is 15 feet above the ground at the bottom of a hill. It rises at a constant rate of 8 feet per second. Which equation gives its height \(h\), in feet, \(s\) seconds after it starts up the hill?</div><ul class="choices"><li>A. \(h=15s+8\)</li><li>B. \(h=8s+15\)</li><li>C. \(h=8s-15\)</li><li>D. \(h=15-8s\)</li></ul><div class="solution"><strong>中文解析：</strong>“每秒上升8英尺”给出斜率 \(m=8\)；“开始时15英尺高”给出截距 \(b=15\)。因此 \(h=8s+15\)。检验 \(s=0\) 时 \(h=15\)，且每增加1秒高度增加8，B正确。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Functions/Linear Functions 1.pdf</code>，原题编号 <code>84664a7c</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">The function \(f\) is defined by \(f(x)=3x-7\). What is the value of \(f(12)\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(29\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Functions/Linear Functions 1.pdf</code>，原题编号 <code>84664a7c</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>给定 \(f(2)=7,f(5)=16\)，写出 (f\(x\)) 并说明斜率的含义。</div>
+      <p><strong>与下一知识点的连接：</strong>下一步把函数关系写成含两个变量的方程，并学习从方程读结构。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Algebra/Linear Functions/Linear Functions 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="A3">
+      <div class="module-header"><div><h3>3. 二元一次方程<small>Linear Equations in Two Variables</small></h3></div><span class="badge">代数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>一次函数、斜率截距式、代入与整理</p>
+      <p><strong>本知识点要解决的问题：</strong>一个二元一次方程通常描述一条直线；题目会让你在文字、表格、图像和方程之间转换。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>方程 \(Ax+By=C\) 的所有解组成一条直线。除非再给一个独立条件，否则通常有无穷多个解。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(Ax+By=C\)；若 \(B\ne0\)，可写为 \(y=-\dfrac ABx+\dfrac CB\)，所以斜率为 \(-A/B\)，\(y\)-截距为 \(C/B\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(A,B,C\) 是常数；\(x,y\) 是点；整理成斜率截距式时不能除以0。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>直线经过 \((0,5),(2,11)\)，斜率 \(3\)，所以 \(y=3x+5\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它和一次函数是等价表示；和系统题的区别是系统需要同时满足两条关系。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>一个方程给一条直线；两个独立方程的公共解可能是一个点、没有点，或整条直线。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>不要把 \(x\)-截距和 \(y\)-截距混淆；从标准式读斜率必须先整理。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(Ax+By=C\)</li><li>\(y=mx+b\)</li><li>\(m=-A/B\)</li><li>点代入方程检验</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先判断题目要的是方程、某个坐标还是截距。</li><li>找两点或找斜率与截距。</li><li>选择最少步骤的形式。</li><li>代入一个点检查。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么 \(0,5\) 直接给出截距5？<br><strong>预期回应：</strong>因为横坐标为0时，纵坐标就是 \(y\)-截距。</div><div><strong>教师问：</strong>给一条直线上的一个点够不够确定直线？<br><strong>预期回应：</strong>不够；还需要斜率或第二个不同点。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A line passes through the points \(0,5\) and \(2,11\). Which equation represents the line?</div><ul class="choices"><li>A. \(y=2x+5\)</li><li>B. \(y=3x+5\)</li><li>C. \(y=3x+11\)</li><li>D. \(y=5x+3\)</li></ul><div class="solution"><strong>中文解析：</strong>斜率 \(m=(11-5)/(2-0)=6/2=3\)。因为点 \(0,5\) 在直线上，截距 \(b=5\)。所以 \(y=3x+5\)，B正确。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Equations in Two Variables/Linear Equations in Two Variables 1.pdf</code>，原题编号 <code>4d8ccb96</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">If \(2x+3y=18\) and \(x=3\), what is the value of \(y\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(4\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Equations in Two Variables/Linear Equations in Two Variables 1.pdf</code>，原题编号 <code>4d8ccb96</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>把 \(4x-2y=10\) 改写成 \(y=mx+b\)，并写出斜率。</div>
+      <p><strong>与下一知识点的连接：</strong>下一步同时处理两条直线关系，寻找它们的交点或判断是否无解。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Algebra/Linear Equations in Two Variables/Linear Equations in Two Variables 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="A4">
+      <div class="module-header"><div><h3>4. 一次方程组<small>Systems of Linear Equations</small></h3></div><span class="badge">代数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>一次方程、代入、消元、图像交点</p>
+      <p><strong>本知识点要解决的问题：</strong>系统题问的是“同时满足所有条件”的数值；几何上通常是两条直线的交点。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>解方程组就是寻找同时满足两条方程的 \(x,y\)。最稳的两种方法是代入和消元；文字题先定义变量，再把条件写成方程。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(\begin{cases}a_1x+b_1y=c_1\\a_2x+b_2y=c_2\end{cases}\)。唯一解对应两条不平行直线的交点。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(x,y\) 是同一组未知量；两行方程必须同时成立；消元时必须对整行或等式做一致操作。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(x+y=13,2x+y=19\)。第二式减第一式得 \(x=6\)，再代回得 \(y=7\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它把A3的一条直线关系升级为公共解问题，也是票价、混合、数量和几何交点模型的基础。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>无解不是“算错了”：两条平行且不同的直线没有公共点；无穷多解表示两条方程本质相同。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>文字题中最容易把总数方程和总价方程写反，或解出一个变量后忘记代回。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>代入法</li><li>消元法</li><li>交点解释</li><li>解回原方程组检验</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先圈出“总数、总价、差、交点”等条件。</li><li>写出两条方程并标注每一项含义。</li><li>选择系数最容易抵消的一列。</li><li>代回两式，确认同时成立。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么解出来的 \(x,y\) 必须同时代回两式？<br><strong>预期回应：</strong>因为系统的定义要求同时满足全部方程。</div><div><strong>教师问：</strong>两条直线没有交点对应什么？<br><strong>预期回应：</strong>无解；通常是平行线。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">What is the solution \(x,y\) to the system below? \(\begin{cases}x+y=13\\2x+y=19\end{cases}\)</div><ul class="choices"><li>A. \(5,8\)</li><li>B. \(6,6\)</li><li>C. \(6,7\)</li><li>D. \(7,6\)</li></ul><div class="solution"><strong>中文解析：</strong>用第二式减第一式：\((2x+y)-(x+y)=19-13\)，所以 \(x=6\)。代回第一式：\(6+y=13\)，得 \(y=7\)。检验第二式 \(2(6)+7=19\)，因此 C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Systems of Linear Equations/Systems of Linear Equations 1.pdf</code>，原题编号 <code>b86123af</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">Adult tickets cost $12 and child tickets cost $8. A total of 15 tickets cost $152. How many adult tickets were sold? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(8\) adult tickets</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Systems of Linear Equations/Systems of Linear Equations 1.pdf</code>，原题编号 <code>b86123af</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>判断系统 \(y=2x+1\) 与 \(y=2x-4\) 有几个解，并说明理由。</div>
+      <p><strong>与下一知识点的连接：</strong>下一步处理“允许哪些值”的问题：把等式条件改成范围条件。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Algebra/Systems of Linear Equations/Systems of Linear Equations 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="A5">
+      <div class="module-header"><div><h3>5. 一次不等式<small>Linear Inequalities</small></h3></div><span class="badge">代数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>一次方程、数轴、负数运算</p>
+      <p><strong>本知识点要解决的问题：</strong>不等式不是寻找一个唯一答案，而是寻找满足条件的一整段范围。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>解一次不等式的步骤像解方程，但乘或除以负数时方向必须反过来，因为数轴顺序会被翻转。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>例如 \(ax+b\le c\)。若 \(a\gt0\)，则 \(x\le(c-b)/a\)；若 \(a\lt0\)，则 \(x\ge(c-b)/a\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(\le,\ge\) 包含端点，\(\lt,\gt\) 不包含端点；不等式方向只在乘除负数时翻转。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(4-3x\le19\Rightarrow-3x\le15\Rightarrow x\ge-5\)。最后一步除以负3，所以方向翻转。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它和方程组、预算、最小最大值及定义域相连；答案通常需要写成区间或数轴。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>方程 \(x=3\) 是一个点；不等式 \(x\ge3\) 是从3开始向右的一整段。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>最典型错误是除以负数仍保持原方向，以及把实心端点和空心端点画反。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>负数乘除翻转</li><li>\(\le,\ge\) 包含端点</li><li>数轴验证一个测试值</li><li>文字范围翻译</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先把不等式整理成含变量的一侧。</li><li>红笔标记即将除以负数的步骤。</li><li>数轴画端点和方向。</li><li>选一个范围内的数代回检验。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么除以负数会翻转？<br><strong>预期回应：</strong>例如 \(2\lt5\)，两边乘\(-1\) 得 \(-2\gt-5\)，数轴顺序被反转。</div><div><strong>教师问：</strong>“at least”对应哪个符号？<br><strong>预期回应：</strong>至少是 \(\ge\)，包含等于。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">Which inequality is equivalent to \(4-3x\le19\)?</div><ul class="choices"><li>A. \(x\le-5\)</li><li>B. \(x\le5\)</li><li>C. \(x\ge5\)</li><li>D. \(x\ge-5\)</li></ul><div class="solution"><strong>中文解析：</strong>两边减4：\(-3x\le15\)。除以负数 \(-3\) 时方向翻转，得到 \(x\ge-5\)。可取 \(x=0\) 检验原式 \(4\le19\) 成立，D正确。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Inequalities/Linear Inequalities 1.pdf</code>，原题编号 <code>2c121b25</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A student has $73 to spend. After paying a $25 fee, each additional item costs $6. What is the greatest possible number \(n\) of additional items? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(8\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Algebra/Linear Inequalities/Linear Inequalities 1.pdf</code>，原题编号 <code>2c121b25</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>解 \(7-2x\gt15\)，并说明端点是否包含。</div>
+      <p><strong>与下一知识点的连接：</strong>四类代数基础建立后，进入需要展开、因式分解和函数结构判断的高等数学。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Algebra/Linear Inequalities/Linear Inequalities 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    </div><div class="block" id="block-AdvancedMath"><div class="block-title"><h2>高等数学</h2><span class="en">Advanced Math</span></div>
+    <section class="module" id="B1">
+      <div class="module-header"><div><h3>6. 等价表达式<small>Equivalent Expressions</small></h3></div><span class="badge">高等数学 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>分配律、合并同类项、指数规则</p>
+      <p><strong>本知识点要解决的问题：</strong>同一个量可以有不同外观；SAT常问“哪一个表达式等价”，关键是识别结构而不是盲目计算。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>两个表达式对定义域内所有允许的输入都给出相同结果，就称它们等价。展开、合并、因式分解和指数规则都在改变外观而不改变值。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>若对所有定义域内的 \(x\)，\(E_1(x)=E_2(x)\)，则 \(E_1,E_2\) 等价。常用：\(a(b+c)=ab+ac\)，\(x^m x^n=x^{m+n}\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>括号、指数和定义域都必须保留；分母不能为0，偶次根号内不能为负。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(2(x+3)+3(x-1)=2x+6+3x-3=5x+3\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>等价表达式是二次函数配方、根式化简、指数模型和图像分析的语言基础。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>“看起来相似”不代表等价；例如 \((x+3)^2
+e x^2+9\)，因为中间项 \(6x\) 不能消失。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>漏写分配律中的某一项、指数相乘却把指数相乘、以及约分时忽略定义域。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>分配律</li><li>合并同类项</li><li>\((x+a)(x+b)=x^2+(a+b)x+ab\)</li><li>\(x^m x^n=x^{m+n}\)</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先标出括号和指数。</li><li>逐项展开，不跳步。</li><li>合并同类项并按次数排列。</li><li>用一个简单数值代入做快速检查。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么 \(2(x+3)\) 不能写成 \(2x+3\)？<br><strong>预期回应：</strong>2要乘括号内每一项，所以是 \(2x+6\)。</div><div><strong>教师问：</strong>数值代入能证明等价吗？<br><strong>预期回应：</strong>一个数值只能发现错误，不能单独证明对所有 \(x\) 等价；代数恒等变形才是证明。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">Which expression is equivalent to \(2(x+3)+3(x-1)\)?</div><ul class="choices"><li>A. \(5x+3\)</li><li>B. \(5x+9\)</li><li>C. \(6x+2\)</li><li>D. \(6x+3\)</li></ul><div class="solution"><strong>中文解析：</strong>分配律：\(2(x+3)=2x+6\)，\(3(x-1)=3x-3\)。相加得 \(2x+6+3x-3=5x+3\)，所以 A。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Equivalent Expressions/Equivalent Expressions 1.pdf</code>，原题编号 <code>e312081b</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">If \((x+2)(x-5)=x^2+bx-10\), what is the value of \(b\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(-3\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Equivalent Expressions/Equivalent Expressions 1.pdf</code>，原题编号 <code>e312081b</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>化简 \(4(2x-3)-2(x+5)\)，并说明每一步的规则。</div>
+      <p><strong>与下一知识点的连接：</strong>等价变形后，进入二次方程与非线性结构，学习找根而不只是展开。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Advanced Math/Equivalent Expressions/Equivalent Expressions 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="B2">
+      <div class="module-header"><div><h3>7. 非线性方程与方程组<small>Nonlinear Equations and Systems</small></h3></div><span class="badge">高等数学 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>因式分解、零乘积性质、平方根</p>
+      <p><strong>本知识点要解决的问题：</strong>非线性关系可能有多个交点或多个解；先看结构，再决定因式分解、配方、开方或代入。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>二次方程常可因式分解成两个一次因子。若 \(uv=0\)，则 \(u=0\) 或 \(v=0\)，这使“找根”变成两个简单方程。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(x^2+bx+c=0\) 可写为 \((x-r_1)(x-r_2)=0\)，解为 \(x=r_1,r_2\)。顶点式 \(a(x-h)^2+k\) 也能揭示最值。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>根是使方程为0的输入；解方程时必须回到原方程检验，尤其是平方、分式或根式变形后。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(x^2-5x+6=0\Rightarrow(x-2)(x-3)=0\Rightarrow x=2,3\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它连接因式分解、函数零点、图像与方程组；求解方程就是找图像与 \(x\)-轴或另一图像的交点。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>平方方程开方时通常有正负两个分支；只写一个根会漏解。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把 \(x^2=9\) 只解成3，或因式分解后忘记每个因子都可能为0。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>零乘积性质</li><li>\(x^2-5x+6=(x-2)(x-3)\)</li><li>顶点式</li><li>代回检验</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先把方程整理成一边等于0。</li><li>找两个数：乘积为常数，和为一次项系数。</li><li>每个因子分别等于0。</li><li>把所有根代回原方程。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么要先移到0？<br><strong>预期回应：</strong>零乘积性质要求乘积等于0，才能拆成两个因子分别为0。</div><div><strong>教师问：</strong>二次方程最多有几个实根？<br><strong>预期回应：</strong>最多两个；图像最多与横轴相交两次。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">What are the solutions to \(x^2-5x+6=0\)?</div><ul class="choices"><li>A. \(x=1,6\)</li><li>B. \(x=-2,-3\)</li><li>C. \(x=2,3\)</li><li>D. \(x=5,6\)</li></ul><div class="solution"><strong>中文解析：</strong>寻找乘积为6、和为\(-5\)的两个数：\(-2,-3\)。所以 \(x^2-5x+6=(x-2)(x-3)\)。令每个因子为0，得到 \(x=2\) 或 \(x=3\)，C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Nonlinear Equations and Systems/Nonlinear Equations and Systems 1.pdf</code>，原题编号 <code>3c95093c</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">For the equation \(y=x^2-4x+3\), what are the values of \(x\) when \(y=0\)? (Enter both answers separated by a comma.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(1,3\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Nonlinear Equations and Systems/Nonlinear Equations and Systems 1.pdf</code>，原题编号 <code>3c95093c</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>解 \(x^2+2x-8=0\)，并用因式分解说明。</div>
+      <p><strong>与下一知识点的连接：</strong>从“求根”进入“读函数”：判断顶点、最值、增减和指数变化。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Advanced Math/Nonlinear Equations and Systems/Nonlinear Equations and Systems 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="B3">
+      <div class="module-header"><div><h3>8. 非线性函数、二次模型与指数模型<small>Nonlinear Functions, Quadratics, and Exponential Models</small></h3></div><span class="badge">高等数学 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>函数代入、等价表达式、二次配方、百分比变化</p>
+      <p><strong>本知识点要解决的问题：</strong>如果变化量不恒定，就要看函数的形状：二次模型描述弯曲的抛物线，指数模型描述按比例增长或衰减。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>二次函数的顶点帮助找最大值或最小值；指数函数 \(A(1+r)^t\) 的每一步变化都按同一比例发生。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>二次顶点式 \(f(x)=a(x-h)^2+k\)，顶点为 \(h,k\)；指数模型 \(P(t)=P_0(1+r)^t\)，\(r\) 是每期相对变化率。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(a\ne0\)；若 \(a\gt0\) 是最小值，若 \(a\lt0\) 是最大值；\(P_0\) 是初值，\(r\gt-1\)，\(t\) 是周期数。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(x^2-6x+11=(x-3)^2+2\)，所以顶点为 \(3,2\)，最小值是2。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>二次、指数都属于非线性，但增长机制不同：二次看加法结构，指数看乘法比例；不能混用模型。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>“每年增加5”是线性；“每年增加5%”是指数。前者加固定量，后者乘固定因子。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把指数百分比写成 \(1.05t\)，或把顶点横坐标和最小函数值混为一谈。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(a(x-h)^2+k\)</li><li>顶点 \(h,k\)</li><li>\(P_0(1+r)^t\)</li><li>增长率与增长因子</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先判断题目说“固定量”还是“固定百分比”。</li><li>二次题优先配方或看对称轴。</li><li>指数题先写初值和增长因子。</li><li>最后检查单位与周期。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>\(x=3\) 和最小值2分别是什么？<br><strong>预期回应：</strong>3是达到最小值的输入；2是函数输出的最小值。</div><div><strong>教师问：</strong>4%增长的因子为什么是1.04？<br><strong>预期回应：</strong>保留原来的100%，再增加4%，合计104%=1.04。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">The function \(f(x)=x^2-6x+11\) is given. What is the minimum value of (f\(x\))?</div><ul class="choices"><li>A. \(2\)</li><li>B. \(3\)</li><li>C. \(6\)</li><li>D. \(11\)</li></ul><div class="solution"><strong>中文解析：</strong>配方：\(x^2-6x+11=(x-3)^2+2\)。因为平方项总是大于等于0，所以最小值在 \(x=3\) 时取得，最小函数值为2，A。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Nonlinear Functions/Nonlinear Functions 1.pdf</code>，原题编号 <code>6abec9a8</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A population is modeled by \(P(t)=800(1.05)^t\), where \(t\) is the number of years. What is \(P(2)\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(882\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Advanced Math/Nonlinear Functions/Nonlinear Functions 1.pdf</code>，原题编号 <code>6abec9a8</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>把 \(x^2+8x+20\) 写成顶点式，并判断最小值。</div>
+      <p><strong>与下一知识点的连接：</strong>高等数学结束后，回到现实量纲：比例、单位、百分比和数据解释。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Advanced Math/Nonlinear Functions/Nonlinear Functions 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    </div><div class="block" id="block-ProblemSolvingandDataAnalysis"><div class="block-title"><h2>问题解决与数据分析</h2><span class="en">Problem-Solving and Data Analysis</span></div>
+    <section class="module" id="C1">
+      <div class="module-header"><div><h3>9. 比率、速率、比例与单位<small>Ratios, Rates, Proportions, and Units</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>分数、小数、单位换算、一次方程</p>
+      <p><strong>本知识点要解决的问题：</strong>先让单位说清楚，再让数字说话；比例题出错往往不是算术，而是单位和对应关系错了。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>速率是“每单位时间的量”；比例是两个量保持固定倍数关系。列式前先写单位，能显著减少混淆。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>速率 \(=\dfrac{\text{quantity}}{\text{time}}\)；比例 \(\dfrac ab=\dfrac cd\) 可交叉相乘为 \(ad=bc\)，前提是分母非零。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>量、时间、距离、价格和单位必须一致；转换单位时要乘以等于1的换算因子。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>180 miles 用时3 hours，速率 \(180/3=60\) miles per hour。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>比例模型常与百分比、相似三角形、密度、单价和线性函数相连。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>比例是乘法关系，不是“相差固定”；固定差通常对应线性加法变化。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>英尺和英寸、分钟和小时、每件价格与总价常被混用。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>单位速率</li><li>\(\dfrac ab=\dfrac cd\)</li><li>交叉相乘</li><li>最终答案带单位</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>写出已知量和单位。</li><li>决定要找“每单位”还是“总量”。</li><li>列比例或单位速率方程。</li><li>检查答案数量级和单位。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>60 miles per hour 的分母是什么？<br><strong>预期回应：</strong>时间，表示每1小时行驶60英里。</div><div><strong>教师问：</strong>为什么换单位可以乘一个分数？<br><strong>预期回应：</strong>换算因子等于1，只改变单位表达，不改变实际量。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A car travels 180 miles in 3 hours at a constant rate. What is its speed, in miles per hour?</div><ul class="choices"><li>A. \(30\)</li><li>B. \(45\)</li><li>C. \(60\)</li><li>D. \(90\)</li></ul><div class="solution"><strong>中文解析：</strong>速率 \(=\text{distance}/\text{time}=180/3=60\)。单位是 miles per hour，因此 C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Ratios, Rates, Proportions, and Units/Ratios, Rates, Proportions, and Units 1.pdf</code>，原题编号 <code>3f5398a6</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">On a map, 1 inch represents 12 miles. A distance measures 3.5 inches on the map. How many miles does it represent? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(42\) miles</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Ratios, Rates, Proportions, and Units/Ratios, Rates, Proportions, and Units 1.pdf</code>，原题编号 <code>3f5398a6</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>一辆车以 \(45\) miles per hour 行驶 \(2.5\) hours，距离是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>下一步把比例关系扩展到折扣、税率和增长百分比。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Ratios, Rates, Proportions, and Units/Ratios, Rates, Proportions, and Units 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C2">
+      <div class="module-header"><div><h3>10. 百分比<small>Percentages</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>小数、比例、一次方程</p>
+      <p><strong>本知识点要解决的问题：</strong>百分比变化不是简单加减：涨价和打折都要明确“相对于原来的谁”。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>百分比 \(p\%\) 等于小数 \(p/100\)。增加 \(p\%\) 乘 \(1+p/100\)；减少 \(p\%\) 乘 \(1-p/100\)。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>新量 \(=\text{原量}\times(1\pm r)\)，其中 \(r\) 用小数表示；百分比变化 \(=\dfrac{\text{新}-\text{原}}{\text{原}}\times100\%\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>“原量”是百分比的基准；连续变化要逐次乘因子，不能把百分比直接相加。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\($80\) 增加15%：\(80(1.15)=92\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>百分比与指数增长、比例、数据比例和统计样本比例直接相连。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>增加20%再减少20%不会回到原数：乘子是 \(1.2\times0.8=0.96\)。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把15%写成15，或折扣后价格反推原价时仍乘0.8而不是除以0.8。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(p\%=p/100\)</li><li>增加：\(1+r\)</li><li>减少：\(1-r\)</li><li>原量 \(=\text{新量}/\text{因子}\)</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>圈出“原价/原量”。</li><li>把百分数转成小数。</li><li>先写乘法因子再计算。</li><li>反推时用方程而不是凭感觉。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>20% discount means pay what percent?<br><strong>预期回应：</strong>支付原价的80%，因子为0.80。</div><div><strong>教师问：</strong>为什么反推不能直接乘80%？<br><strong>预期回应：</strong>因为已知的是结果 \(0.8P\)，要除以0.8才能恢复 \(P\)。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A jacket originally costs $80. The price increases by 15%. What is the new price?</div><ul class="choices"><li>A. $81.20</li><li>B. $92.00</li><li>C. $95.00</li><li>D. $120.00</li></ul><div class="solution"><strong>中文解析：</strong>增长因子是 \(1+0.15=1.15\)。新价格 \(80(1.15)=92\)，所以 B。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Percentages/Percentages 1.pdf</code>，原题编号 <code>bd90f87e</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">After a 20% discount, a jacket costs $56. What was its original price? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\($70\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Percentages/Percentages 1.pdf</code>，原题编号 <code>bd90f87e</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>一个数先增加10%再减少10%，最终是原来的百分之多少？</div>
+      <p><strong>与下一知识点的连接：</strong>百分比是数据题的入口；接下来用平均数、中位数和离散程度读一组数据。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Percentages/Percentages 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C3">
+      <div class="module-header"><div><h3>11. 单变量数据<small>One-Variable Data</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>分数、小数、排序、四则运算</p>
+      <p><strong>本知识点要解决的问题：</strong>一组数据先问中心在哪里，再问数据分布得有多开；平均数容易被极端值拉动。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>均值是总和除以个数；中位数是排序后的中间位置；极差是最大值减最小值。题目常考统计量如何随数据变化。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>均值 \(\bar x=\dfrac{\sum x_i}{n}\)；极差 \(=\max-\min\)；若 \(n\) 为偶数，中位数是中间两个数的平均。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>(x_i) 是第 \(i\) 个观测，\(n\) 是观测数；计算中位数前必须排序。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>数据 \(4,6,8,8,9\) 的均值为 \(35/5=7\)，中位数为8，极差为5。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>均值与总和方程相连；散点图、抽样和误差范围会把一维数据扩展到更大数据背景。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>均值使用所有数据但受极端值影响；中位数更稳健但不直接反映总和。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>未排序就找中位数、把样本数当总和、或新增数据后只改变均值不重新理解总和。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(\bar x=\sum x_i/n\)</li><li>中位数先排序</li><li>极差</li><li>加权平均的权重是数量</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先列出并排序数据。</li><li>用“总和=均值×个数”处理反推。</li><li>比较均值与中位数判断偏斜。</li><li>说明统计量的单位。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>加入一个极大的数据，均值和中位数谁更容易变？<br><strong>预期回应：</strong>均值通常更容易受到影响。</div><div><strong>教师问：</strong>五个数的平均数是82，总和是多少？<br><strong>预期回应：</strong>总和是 \(5\times82=410\)。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">The data set is \(4,6,8,8,9\). What is the mean of the data set?</div><ul class="choices"><li>A. \(6\)</li><li>B. \(7\)</li><li>C. \(8\)</li><li>D. \(35\)</li></ul><div class="solution"><strong>中文解析：</strong>先求总和：\(4+6+8+8+9=35\)。共有5个数据，所以均值 \(35/5=7\)，B。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/One-Variable Data/One-Variable Data 1.pdf</code>，原题编号 <code>f890dc20</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">Five test scores have a mean of 82. Four of the scores have a sum of 319. What is the fifth score? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(91\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/One-Variable Data/One-Variable Data 1.pdf</code>，原题编号 <code>f890dc20</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>数据 \(2,5,7,10\) 的中位数和极差分别是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>从一维数据转到两个变量，学习用表格、散点和回归线作预测。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/One-Variable Data/One-Variable Data 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C4">
+      <div class="module-header"><div><h3>12. 双变量数据与线性模型<small>Two-Variable Data and Linear Models</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>坐标平面、一次函数、平均变化率</p>
+      <p><strong>本知识点要解决的问题：</strong>两个变量一起变化时，我们想知道方向、强弱和能否预测；相关不等于因果。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>散点图展示成对数据；回归线给出典型趋势；相关系数 \(r\) 的符号表示方向，绝对值越接近1表示线性关系越强。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>线性模型可写 \(\hat y=mx+b\)；相关系数满足 \(-1\le r\le1\)。\(r\lt0\) 表示负线性关联。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(x\) 是解释变量，\(y\) 是响应变量，\(\hat y\) 是预测值；预测不能自动变成因果结论。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>若 \(\hat y=2.5x+10\)，当 \(x=12\) 时 \(\hat y=40\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它把一次函数的斜率解释成预测变化率，并与统计抽样、偏差和离群点相连。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>强相关只说明共同变化，不说明一个变量造成另一个变量变化；观察研究尤其要谨慎。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把 \(r=-0.82\) 当成“82%准确”，或把外推到数据范围外的预测当作可靠结论。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(\hat y=mx+b\)</li><li>\(r\in[-1,1]\)</li><li>残差 = 实际值 - 预测值</li><li>关联不等于因果</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先看散点方向和形状。</li><li>代入回归方程预测。</li><li>解释斜率的单位。</li><li>检查预测点是否在观测范围内。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>斜率2.5在模型中是什么意思？<br><strong>预期回应：</strong>x每增加1，预测的y平均增加2.5个单位。</div><div><strong>教师问：</strong>r=-0.82说明因果吗？<br><strong>预期回应：</strong>不说明；只说明较强的负线性关联。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A line of best fit is given by \(\hat y=2.5x+10\). According to the model, what is the predicted value of \(y\) when \(x=12\)?</div><ul class="choices"><li>A. \(22\)</li><li>B. \(30\)</li><li>C. \(40\)</li><li>D. \(52\)</li></ul><div class="solution"><strong>中文解析：</strong>直接代入 \(x=12\)：\(\hat y=2.5(12)+10=30+10=40\)。这是模型预测，不是保证的实际值，C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Two-Variable Data/Two-Variable Data 1.pdf</code>，原题编号 <code>82aaa0a1</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A data set has a correlation coefficient \(r=-0.82\). Which statement is most appropriate?</div><ul class="choices"><li>A. There is a strong positive linear association.</li><li>B. There is a strong negative linear association.</li><li>C. The first variable causes the second variable to decrease.</li><li>D. The variables have no relationship of any kind.</li></ul><div class="answer-line">课后完成后核对：B.</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Two-Variable Data/Two-Variable Data 1.pdf</code>，原题编号 <code>82aaa0a1</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>若 \(\hat y=4x-3\)，\(x=5\) 时预测值是多少？斜率的单位如何说？</div>
+      <p><strong>与下一知识点的连接：</strong>接下来进入概率与统计推断：从描述关系到量化不确定性。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Two-Variable Data/Two-Variable Data 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C5">
+      <div class="module-header"><div><h3>13. 概率<small>Probability</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>分数、小数、集合交并、乘法</p>
+      <p><strong>本知识点要解决的问题：</strong>概率是“有利结果占全部可能结果的比例”；先明确样本空间，再判断是否需要加法或乘法。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>互斥事件用加法；独立事件同时发生用乘法。条件概率则把样本空间缩小到已经知道的条件下。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(P(A)=\dfrac{\text{favorable outcomes}}{\text{total outcomes}}\)；若独立，\(P(A\cap B)=P(A)P(B)\)；\(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(A\cap B\) 表示同时发生，\(A\cup B\) 表示至少一个发生；等可能模型才可直接用计数比。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>袋中3个红球、2个蓝球，随机取一个，\(P(\text{red})=3/5\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>概率是统计推断的基础；独立性决定能否把概率相乘，互斥性决定能否直接相加。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>互斥事件不能同时发生；独立事件互不影响，二者不是同一个概念。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把“至少一个”当成相交、忽略不放回抽取导致概率改变、或把条件概率分母写错。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(P(A^c)=1-P(A)\)</li><li>\(P(A\cup B)\)</li><li>独立：\(P(A\cap B)=P(A)P(B)\)</li><li>互斥：\(P(A\cap B)=0\)</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先写样本空间。</li><li>判断是“或”还是“且”。</li><li>判断互斥、独立或不放回。</li><li>最后检查概率在0到1之间。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>“and”通常对应什么运算？<br><strong>预期回应：</strong>同时发生，常先考虑交集和乘法，但必须看独立性。</div><div><strong>教师问：</strong>互斥能同时独立吗？<br><strong>预期回应：</strong>若两个事件概率都非零，不能；因为互斥的交集概率为0，而独立乘积为正。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A bag contains 3 red balls and 2 blue balls. One ball is selected at random. What is the probability that it is red?</div><ul class="choices"><li>A. \(2/5\)</li><li>B. \(1/2\)</li><li>C. \(3/5\)</li><li>D. \(3/2\)</li></ul><div class="solution"><strong>中文解析：</strong>总球数 \(=3+2=5\)，有利结果是3个红球。因此 \(P(\text{red})=3/5\)，C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Probability/Probability 1.pdf</code>，原题编号 <code>1353b86e</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">Events \(A\) and \(B\) are independent. If \(P(A)=0.40\) and \(P(B)=0.25\), what is \(P(A\text{ and }B)\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(0.10\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Probability/Probability 1.pdf</code>，原题编号 <code>1353b86e</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>公平硬币连续抛两次，至少出现一次正面的概率是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>下一步把概率从一个实验推广到样本比例、区间和统计结论。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Probability/Probability 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C6">
+      <div class="module-header"><div><h3>14. 样本统计量与误差范围<small>Sample Statistics and Margin of Error</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>百分比、区间表示、平均数</p>
+      <p><strong>本知识点要解决的问题：</strong>样本统计量不是精确的总体真值；误差范围告诉我们合理的不确定性区间。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>估计值加减误差范围形成区间。区间越窄通常表示估计更精确，但解释必须保留抽样不确定性。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>估计区间 \(=\text{estimate}\pm\text{margin of error}\)。若样本比例为 \(\hat p\)，误差范围为 \(E\)，区间是 \([\hat p-E,\hat p+E]\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>\(\hat p\) 或 \(\bar x\) 是样本估计，\(E\) 是误差范围；区间不表示每个个体都落在其中。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>\(\hat p=0.52,E=0.04\Rightarrow[0.48,0.56]\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它连接样本代表性、统计声明和抽样方法；误差范围不能修复有偏抽样。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>误差范围反映随机抽样误差，不等于测量错误，也不自动包含系统偏差。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把误差范围加到一边、把百分数与小数混用，或把区间误说成“95%的人在里面”。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(\text{estimate}\pm E\)</li><li>下界与上界</li><li>百分数和小数统一</li><li>代表性先于区间解释</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>写出中心估计。</li><li>写出“减E”和“加E”两端。</li><li>统一单位和百分数。</li><li>用一句完整中文解释区间。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>误差范围4个百分点，中心52%，下界是多少？<br><strong>预期回应：</strong>48%，即0.48。</div><div><strong>教师问：</strong>区间变窄一定说明没有偏差吗？<br><strong>预期回应：</strong>不一定；有偏样本可以很精确地估计错。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A sample proportion is \(0.52\) with a margin of error of \(0.04\). Which interval represents the estimate plus or minus the margin of error?</div><ul class="choices"><li>A. \([0.04,0.52]\)</li><li>B. \([0.48,0.56]\)</li><li>C. \([0.52,0.56]\)</li><li>D. \([0.48,0.52]\)</li></ul><div class="solution"><strong>中文解析：</strong>下界 \(0.52-0.04=0.48\)，上界 \(0.52+0.04=0.56\)。所以区间为 \([0.48,0.56]\)，B。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error 1.pdf</code>，原题编号 <code>90eed2e5</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A survey estimates a population mean of 72 with a margin of error of 3. What is the corresponding interval? (Enter the lower and upper endpoints.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\([69,75]\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error 1.pdf</code>，原题编号 <code>90eed2e5</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>样本均值为72，误差范围为3，写出估计区间并解释。</div>
+      <p><strong>与下一知识点的连接：</strong>最后学习怎样判断一个统计结论是否真的被抽样设计支持。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error/Sample Statistics and Margin of Error 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="C7">
+      <div class="module-header"><div><h3>15. 统计声明的判断<small>Evaluating Statistical Claims</small></h3></div><span class="badge">问题解决与数据分析 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>样本、总体、概率、相关与因果</p>
+      <p><strong>本知识点要解决的问题：</strong>统计题不只问数字是多少，还问“这个数字能不能代表谁、支持到什么程度”。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>先区分总体与样本，再检查抽样是否随机、是否有自愿响应、样本量是否合理、结论是否超出了研究设计。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>随机抽样支持对总体的推广；随机分组支持因果解释；观察研究或志愿样本通常只能说明关联，不能直接证明因果。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>总体是想研究的全部对象，样本是实际观测对象；结论范围必须与抽样框和研究设计一致。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>只让主动报名的学生回答“是否喜欢新课程”，不能无条件代表所有学生，因为自愿响应会产生偏差。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>它是所有数据题的解释层：即使计算完全正确，抽样设计不当也可能使结论不可靠。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>随机抽样回答“能否推广”；随机实验回答“能否谈因果”；二者作用不同。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把“随机抽样”误写成“随机分组”，把拒绝零假设写成证明某事为真，或把样本结果说成精确的总体事实。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>总体/样本</li><li>随机抽样/随机分组</li><li>偏差来源</li><li>关联不等于因果</li><li>结论边界</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>标出研究对象和被调查对象。</li><li>识别抽样方法。</li><li>判断结论是描述、推广还是因果。</li><li>用保守语言写结论。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>志愿者样本为什么可能偏？<br><strong>预期回应：</strong>愿意参加的人可能与不愿意参加的人系统不同。</div><div><strong>教师问：</strong>随机分组解决代表性问题吗？<br><strong>预期回应：</strong>不一定；它主要支持组间因果比较，代表性仍依赖样本来源。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A school asks students to volunteer to answer a survey about a new lunch menu. Which is the most important limitation of the survey?</div><ul class="choices"><li>A. The survey has a voluntary-response bias.</li><li>B. The survey must have no sample at all.</li><li>C. The survey proves that every student has the same opinion.</li><li>D. The survey is a randomized experiment.</li></ul><div class="solution"><strong>中文解析：</strong>样本来自主动报名者，愿意参加的人可能与不参加的人意见不同，因此存在 voluntary-response bias。该设计不是随机实验，也不能证明所有学生意见相同，A。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Evaluating Statistical Claims/Evaluating Statistical Claims 1.pdf</code>，原题编号 <code>9bf4c545</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A random sample of 200 students is selected from a school, and 62% favor a proposed schedule. Which conclusion is most appropriate?</div><ul class="choices"><li>A. Exactly 62% of every student in the school favors the schedule.</li><li>B. About 62% of the school population may favor the schedule, with sampling uncertainty.</li><li>C. The schedule causes students to favor it.</li><li>D. The result proves that no student opposes the schedule.</li></ul><div class="answer-line">课后完成后核对：B.</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Sample Statistics and Margin of Error/Evaluating Statistical Claims/Evaluating Statistical Claims 1.pdf</code>，原题编号 <code>9bf4c545</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>用一句话区分随机抽样和随机分组各自支持的结论。</div>
+      <p><strong>与下一知识点的连接：</strong>问题解决与数据分析完成后，进入几何与三角函数，把代数模型放回图形和空间中。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Sample Statistics and Margin of Error/Evaluating Statistical Claims/Evaluating Statistical Claims 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    </div><div class="block" id="block-GeometryandTrigonometry"><div class="block-title"><h2>几何与三角函数</h2><span class="en">Geometry and Trigonometry</span></div>
+    <section class="module" id="D1">
+      <div class="module-header"><div><h3>16. 直线、角与三角形<small>Lines, Angles, and Triangles</small></h3></div><span class="badge">几何与三角函数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>一次方程、角的单位、比例</p>
+      <p><strong>本知识点要解决的问题：</strong>几何关系常被翻译成方程：三角形内角和、平行线角关系和相似比都是可计算的约束。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>三角形内角和为180°；相似三角形对应角相等、对应边成比例；全等则形状和大小都相同。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>三角形内角和 \(A+B+C=180^\circ\)；相似时 \(\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}=\dfrac{c_1}{c_2}\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>角度用度数，边长必须对应同样位置；相似比的方向要保持一致。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>若三角形角为 \(2x,3x,4x\)，则 \(9x=180\)，\(x=20\)，最大角 \(4x=80^\circ\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>相似三角形提供比例方程；平行线可制造相似；后续面积、圆和三角函数都依赖角与边的结构。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>相似不要求大小相同，只要求形状相同；全等才同时保证对应边相等。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>相似比对应错位、把外角和内角混用、忘记三角形三角和。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(A+B+C=180^\circ\)</li><li>垂直角相等</li><li>平行线内错角相等</li><li>相似对应边成比例</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>给角标号并写出总和。</li><li>画对应边和对应角的箭头。</li><li>列比例时保持同向。</li><li>用角度范围和边长正性检查。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么 \(2x+3x+4x=180\)？<br><strong>预期回应：</strong>它们是同一个三角形的三个内角。</div><div><strong>教师问：</strong>相似三角形边长比能平方吗？<br><strong>预期回应：</strong>求面积比时是相似比的平方；求边长本身只用一次相似比。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">The angles of a triangle measure \(2x^\circ\), \(3x^\circ\), and \(4x^\circ\). What is the measure of the largest angle?</div><ul class="choices"><li>A. \(20^\circ\)</li><li>B. \(40^\circ\)</li><li>C. \(60^\circ\)</li><li>D. \(80^\circ\)</li></ul><div class="solution"><strong>中文解析：</strong>三角形内角和：\(2x+3x+4x=180\)，所以 \(9x=180\)，\(x=20\)。最大角是 \(4x=80^\circ\)，D。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Lines, Angles, and Triangles/Lines, Angles, and Triangles 1.pdf</code>，原题编号 <code>5207e508</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">Two similar triangles have corresponding side lengths in the ratio \(3:5\). If a side of the smaller triangle is 12, what is the length of the corresponding side of the larger triangle? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(20\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Lines, Angles, and Triangles/Lines, Angles, and Triangles 1.pdf</code>，原题编号 <code>5207e508</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>若三角形两角为 \(55^\circ\) 和 \(65^\circ\)，第三角是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>角与比例准备好后，进入面积、表面积和体积，注意二维与三维单位。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Geometry and Trigonometry/Lines, Angles, and Triangles/Lines, Angles, and Triangles 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="D2">
+      <div class="module-header"><div><h3>17. 面积、表面积与体积<small>Area and Volume</small></h3></div><span class="badge">几何与三角函数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>乘方、单位、基本图形</p>
+      <p><strong>本知识点要解决的问题：</strong>先判断对象是二维面积还是三维体积，再选公式；单位的平方和立方不能混淆。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>矩形 \(lw\)，三角形 \(bh/2\)，圆 \(\pi r^2\)，柱体 \(Bh\)。面积用平方单位，体积用立方单位。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>矩形 \(A=lw\)；三角形 \(A=\frac12bh\)；圆 \(A=\pi r^2\)；圆柱 \(V=\pi r^2h\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>底 \(b\)、高 \(h\) 必须垂直；圆柱的 \(r\) 是半径而非直径；\(B\) 是底面积。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>长12、宽8的矩形面积 \(12\times8=96\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>相似比改变时面积按平方变化、体积按立方变化；代数方程常用于反求未知尺寸。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>周长是长度单位，面积是平方单位，体积是立方单位。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把直径当半径、三角形忘记除2、单位换算只换数字不换平方/立方。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(A=lw\)</li><li>\(A=\frac12bh\)</li><li>\(A=\pi r^2\)</li><li>\(V=Bh\)</li><li>\(V=\pi r^2h\)</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先画图并标出已知量。</li><li>识别底和垂直高。</li><li>写公式再代入。</li><li>写最终单位并估计数量级。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>圆的直径为10，半径是多少？<br><strong>预期回应：</strong>半径是5。</div><div><strong>教师问：</strong>相似图形边长扩大2倍，面积扩大几倍？<br><strong>预期回应：</strong>4倍，因为面积按长度比的平方变化。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A rectangle has a length of 12 units and a width of 8 units. What is its area, in square units?</div><ul class="choices"><li>A. \(20\)</li><li>B. \(40\)</li><li>C. \(96\)</li><li>D. \(192\)</li></ul><div class="solution"><strong>中文解析：</strong>矩形面积 \(A=lw=12\times8=96\)，单位是 square units，C。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Area and Volume/Area and Volume 1.pdf</code>，原题编号 <code>bb560789</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A cylinder has radius 3 and height 10. What is its volume, in terms of \(\pi\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(90\pi\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Area and Volume/Area and Volume 1.pdf</code>，原题编号 <code>bb560789</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>底为10、高为7的三角形面积是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>下一步把面积公式放进圆的弧、扇形和圆方程中。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Geometry and Trigonometry/Area and Volume/Area and Volume 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="D3">
+      <div class="module-header"><div><h3>18. 圆<small>Circles</small></h3></div><span class="badge">几何与三角函数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>面积、角度、比例、坐标平面</p>
+      <p><strong>本知识点要解决的问题：</strong>圆题的关键是识别半径、直径、周长、面积和圆心角之间的关系。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>圆周长是 \(2\pi r\)，面积是 \(\pi r^2\)；扇形占整圆的比例等于圆心角占360°的比例。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>圆周长 \(C=2\pi r=\pi d\)；圆面积 \(A=\pi r^2\)；扇形面积 \(A_s=\dfrac{\theta}{360^\circ}\pi r^2\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>半径 \(r\)、直径 \(d=2r\)、圆心角 \(\theta\)；角度必须用度数时才能直接除以360。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>半径6的圆周长 \(2\pi(6)=12\pi\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>圆与坐标几何相连：\((x-h)^2+(y-k)^2=r^2\)；与三角函数相连：圆周上的角度和弦。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>周长随 \(r\) 一次变化，面积随 \(r^2\) 变化；半径加倍，周长加倍但面积变四倍。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把圆周长公式和面积公式混淆、把直径代入 \(r^2\)、或扇形比例用180而非360。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(d=2r\)</li><li>\(C=2\pi r\)</li><li>\(A=\pi r^2\)</li><li>\(A_s=\theta/360^\circ\cdot\pi r^2\)</li><li>圆方程</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>先确定题目给的是半径还是直径。</li><li>判断要长度还是面积。</li><li>扇形先求圆心角比例。</li><li>保留 \(\pi\) 或按题意取值。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>半径从6变12，面积变几倍？<br><strong>预期回应：</strong>4倍，因为 \((12/6)^2=4\)。</div><div><strong>教师问：</strong>90°扇形占整圆多少？<br><strong>预期回应：</strong>四分之一。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A circle has a radius of 6. What is its circumference, in terms of \(\pi\)?</div><ul class="choices"><li>A. \(6\pi\)</li><li>B. \(12\pi\)</li><li>C. \(18\pi\)</li><li>D. \(36\pi\)</li></ul><div class="solution"><strong>中文解析：</strong>圆周长公式 \(C=2\pi r\)。代入 \(r=6\)：\(C=12\pi\)，B。不要误用面积公式。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Circles/Circles 1.pdf</code>，原题编号 <code>f2495de4</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">A sector has a central angle of \(90^\circ\) and radius 4. What is its area, in terms of \(\pi\)? (Enter your answer.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(4\pi\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Circles/Circles 1.pdf</code>，原题编号 <code>f2495de4</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>半径4、圆心角90°的扇形面积是多少？</div>
+      <p><strong>与下一知识点的连接：</strong>最后把直角三角形中的边比和角度联系起来，完成几何板块。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Geometry and Trigonometry/Circles/Circles 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    
+    <section class="module" id="D4">
+      <div class="module-header"><div><h3>19. 直角三角形与三角函数<small>Right Triangles and Trigonometry</small></h3></div><span class="badge">几何与三角函数 · 基础重建</span></div>
+      <p class="small"><strong>课时建议：</strong>1×90分钟　<strong>前置：</strong>勾股定理、分数、角度、相似三角形</p>
+      <p><strong>本知识点要解决的问题：</strong>相对于一个锐角，三条边的比例决定正弦、余弦和正切；先标“对、邻、斜”再代公式。</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="label">1 · Plain language</div><p>在直角三角形中，\(\sin\theta=\text{opposite}/\text{hypotenuse}\)，\(\cos\theta=\text{adjacent}/\text{hypotenuse}\)，\(\tan\theta=\text{opposite}/\text{adjacent}\)。</p></div>
+        <div class="concept-card"><div class="label">2 · Formal definition / formula</div><p>\(\sin\theta=\dfrac O H,\cos\theta=\dfrac A H,\tan\theta=\dfrac O A\)，且 \(a^2+b^2=c^2\)。</p></div>
+        <div class="concept-card"><div class="label">3 · Symbols and conditions</div><p>O是相对所选角的对边，A是邻边，H是直角对面的斜边；斜边永远最长。</p></div>
+        <div class="concept-card"><div class="label">4 · Source-aligned example</div><p>直角边6和8组成斜边10；若角的对边为6，则 \(\sin\theta=6/10=3/5\)。</p></div>
+        <div class="concept-card"><div class="label">5 · Relation to nearby ideas</div><p>勾股定理可先求缺边，三角函数再求角或长度；相似三角形保证同一角对应的比值不变。</p></div>
+        <div class="concept-card"><div class="label">6 · Contrast / counter-check</div><p>正弦和余弦都以斜边为分母，正切不含斜边；不要根据记忆而不看角的位置。</p></div>
+        <div class="concept-card"><div class="label">7 · Likely question and common error</div><p>把邻边和对边标错、计算器角度模式错、或把斜边选成最长之外的边。</p></div>
+      </div>
+      <h4>公式与边界审计</h4><ul class="audit"><li>\(a^2+b^2=c^2\)</li><li>\(\sin\theta=O/H\)</li><li>\(\cos\theta=A/H\)</li><li>\(\tan\theta=O/A\)</li></ul>
+      <h4>教师板书 / 投影顺序</h4><ol><li>圈出直角，确定斜边。</li><li>在目标角旁标O/A/H。</li><li>选择最短能解决问题的比值。</li><li>检查结果范围：正弦余弦在0到1之间。</li></ol>
+      <h4>课堂追问、预期回应与误区</h4><div class="prompt"><div><strong>教师问：</strong>为什么6-8-10中10一定是斜边？<br><strong>预期回应：</strong>它是最长边，并且对着直角。</div><div><strong>教师问：</strong>若 \(\tan\theta=3/4\)，如何得到 \(\sin\theta\)？<br><strong>预期回应：</strong>补出3-4-5三角形，所以 \(\sin\theta=3/5\)。</div></div>
+      <div class="callout"><h3>本分数路线的教学动作</h3><p>本路线处理要求：先让学生能独立完成基本模型；教师可在课堂题前口头提供关键词翻译，但课后题撤掉翻译支架。课堂采用“教师示范—半扶练习—独立练习—一句话复盘”。每次只增加一个新难点。</p></div>
+      <h4>课上练习（教师带做）</h4>
+    <div class="question"><div class="q-label">课堂题 · SAT-style English question</div><div class="stem" lang="en">A right triangle has legs of lengths 6 and 8. For the acute angle opposite the side of length 6, what is \(\sin\theta\)?</div><ul class="choices"><li>A. \(3/8\)</li><li>B. \(3/5\)</li><li>C. \(4/5\)</li><li>D. \(5/3\)</li></ul><div class="solution"><strong>中文解析：</strong>由勾股定理斜边为 \(\sqrt{6^2+8^2}=10\)。所选角的对边是6，因此 \(\sin\theta=6/10=3/5\)，B。</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Right Triangles and Trigonometry/Right Triangles and Trigonometry 1.pdf</code>，原题编号 <code>bbaac300</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <h4>课后作业（完整解答见第二份HTML）</h4>
+    <div class="question homework"><div class="q-label">作业题 · SAT-style English question</div><div class="stem" lang="en">In a right triangle, \(\tan\theta=3/4\). What is \(\sin\theta\)? (Enter your answer as a fraction.)</div><div class="small">No choices. Enter the answer.</div><div class="answer-line">课后完成后核对：\(3/5\)</div></div>
+    <div class="source-note"><strong>素材定位：</strong>本题对应本地 SAT Math 题库 <code>SAT-math Question Bank/Geometry and Trigonometry/Right Triangles and Trigonometry/Right Triangles and Trigonometry 1.pdf</code>，原题编号 <code>bbaac300</code>。下面的英文题是同考点改编题：保留SAT的问法、选项逻辑和能力要求，重新排版公式，不冒充原题逐字稿。教师可按文件名和题号回查原资料。</div>
+    
+      <div class="exit"><strong>Exit check：</strong>若直角三角形两直角边为5和12，求斜边。</div>
+      <p><strong>与下一知识点的连接：</strong>几何与三角函数完成；接下来用完整真题包做混合诊断，再按错误类型返修。</p>
+      <p class="small"><strong>教师回查源：</strong><code>SAT-math Question Bank/Geometry and Trigonometry/Right Triangles and Trigonometry/Right Triangles and Trigonometry 1.pdf</code>；对应答案目录位于 <code>SAT-math Question Bank/Answer Keys/</code>。真题阶段请从本文件夹中的“Math only”真题包中抽取同类题。</p>
+    </section>
+    </div></main><footer class="footer"><div class="signature">Guanxu (Gleason) WANG</div><div>教师授课规划 · 500分到600分 · SAT Mathematics</div><div class="small">Prepared for classroom use. Score routes are approximate and should be adjusted after diagnostic evidence.</div></footer></div></body></html>
